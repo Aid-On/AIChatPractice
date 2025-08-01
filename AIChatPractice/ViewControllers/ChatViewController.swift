@@ -19,19 +19,15 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        outputView.text = "ここに返答が表示されます..."
-//        outputView.isEditable = false
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.separatorStyle = .none // セルの枠線をなしに設定
+        tableView.separatorStyle = .none // セルの境界線をなしに設定
         //AIのチャットセル
         tableView.register(UINib(nibName: "AssistantChatTableViewCell", bundle: nil), forCellReuseIdentifier: "AssistantChatTableViewCell")
         //ユーザーのチャットセル
         tableView.register(UINib(nibName: "UserChatTableViewCell", bundle: nil), forCellReuseIdentifier: "UserChatTableViewCell")
-//        tableView.estimatedRowHeight = 20 //セルの高さ
-//        tableView.rowHeight = UITableView.automaticDimension //自動設定
-//        messages.append(Message(role: .assistant, content: "サンプルテキスト"))
+        //初期メッセージ
         messages.append(Message(role: Message.Role.assistant, content: "こんにちは！メッセージをどうぞ！"))
         tableView.reloadData()
     
@@ -41,10 +37,9 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
             guard let text = messageField.text, !text.isEmpty else { return }
 
             // ユーザーメッセージを追加
-//            messages.append(Message(role: .user, content: text))
         messages.append(Message(role: Message.Role.user, content: text))
             tableView.reloadData()
-            scrollToBottom()
+            scrollToBottom() //自動スクロール
 
             messageField.text = ""
             sendButton.isEnabled = false
@@ -78,6 +73,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
             )
         }
     
+    //自動で会話の最後までスクロールする
     func scrollToBottom() {
         guard messages.count > 0 else { return }
         
@@ -99,7 +95,6 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
             
             if message.content == ""{
-    //            cell.label.text = "考え中です..."
                 assistantCell.Textlabel.text = "考え中です..."
             }else{
                 assistantCell.Textlabel.text = message.content
@@ -121,11 +116,6 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
         
     }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        tableView.estimatedRowHeight = 100 //セルの高さ
-//        return UITableView.automaticDimension //自動設定
-//     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         // セルの選択スタイルを.noneにする

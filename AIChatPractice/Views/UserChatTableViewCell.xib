@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQl-Zb-mWc">
-                        <rect key="frame" x="220.33333333333334" y="10" width="99.666666666666657" height="90"/>
+                        <rect key="frame" x="205.33333333333334" y="10" width="104.66666666666666" height="90"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文字の表示" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ony-vv-Xxx">
                                 <rect key="frame" x="10" y="10" width="79.666666666666671" height="70"/>
@@ -31,13 +31,13 @@
                             <constraint firstAttribute="bottom" secondItem="Ony-vv-Xxx" secondAttribute="bottom" constant="10" id="Fmt-fr-e3f"/>
                             <constraint firstItem="Ony-vv-Xxx" firstAttribute="leading" secondItem="XQl-Zb-mWc" secondAttribute="leading" constant="10" id="TXu-NY-7Oc"/>
                             <constraint firstItem="Ony-vv-Xxx" firstAttribute="top" secondItem="XQl-Zb-mWc" secondAttribute="top" constant="10" id="bdd-PH-scE"/>
-                            <constraint firstAttribute="trailing" secondItem="Ony-vv-Xxx" secondAttribute="trailing" constant="10" id="dMG-Es-3Du"/>
+                            <constraint firstAttribute="trailing" secondItem="Ony-vv-Xxx" secondAttribute="trailing" constant="15" id="dMG-Es-3Du"/>
                         </constraints>
                     </view>
                 </subviews>
                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="XQl-Zb-mWc" secondAttribute="trailing" id="7yg-qf-pem"/>
+                    <constraint firstAttribute="trailing" secondItem="XQl-Zb-mWc" secondAttribute="trailing" constant="10" id="7yg-qf-pem"/>
                     <constraint firstItem="XQl-Zb-mWc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Cb4-zw-oxd"/>
                     <constraint firstAttribute="bottom" secondItem="XQl-Zb-mWc" secondAttribute="bottom" constant="10" id="kH5-7h-LoX"/>
                 </constraints>

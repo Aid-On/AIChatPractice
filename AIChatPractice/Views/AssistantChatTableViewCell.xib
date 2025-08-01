@@ -18,10 +18,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wI3-hy-GqT">
-                        <rect key="frame" x="0.0" y="10" width="290" height="90"/>
+                        <rect key="frame" x="10" y="10" width="104.66666666666667" height="90"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="文字の表示" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ony-vv-Xxx" userLabel="Textlabel">
-                                <rect key="frame" x="10" y="10" width="270" height="70"/>
+                                <rect key="frame" x="15" y="10" width="79.666666666666671" height="70"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="Ony-vv-Xxx" firstAttribute="leading" secondItem="wI3-hy-GqT" secondAttribute="leading" constant="10" id="boJ-K8-avm"/>
+                            <constraint firstItem="Ony-vv-Xxx" firstAttribute="leading" secondItem="wI3-hy-GqT" secondAttribute="leading" constant="15" id="boJ-K8-avm"/>
                             <constraint firstAttribute="bottom" secondItem="Ony-vv-Xxx" secondAttribute="bottom" constant="10" id="bs4-Uh-8iR"/>
                             <constraint firstAttribute="trailing" secondItem="Ony-vv-Xxx" secondAttribute="trailing" constant="10" id="eQi-se-xyd"/>
                             <constraint firstItem="Ony-vv-Xxx" firstAttribute="top" secondItem="wI3-hy-GqT" secondAttribute="top" constant="10" id="gz8-cM-HsO"/>
@@ -39,9 +39,8 @@
                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="wI3-hy-GqT" secondAttribute="bottom" constant="10" id="C0w-b6-zmZ"/>
-                    <constraint firstItem="wI3-hy-GqT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fzE-6z-KTj"/>
+                    <constraint firstItem="wI3-hy-GqT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fzE-6z-KTj"/>
                     <constraint firstItem="wI3-hy-GqT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ggd-u1-nTr"/>
-                    <constraint firstAttribute="trailing" secondItem="wI3-hy-GqT" secondAttribute="trailing" constant="30" id="vJA-Q1-AwQ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
