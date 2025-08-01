@@ -24,6 +24,8 @@ class UserChatTableViewCell: UITableViewCell {
         roundedView.layer.cornerRadius = 10
         Textlabel.numberOfLines = 0
         Textlabel.sizeToFit()
+        Textlabel.widthAnchor.constraint(lessThanOrEqualToConstant: 270).isActive = true
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
