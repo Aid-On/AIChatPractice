@@ -10,9 +10,10 @@ import UIKit
 class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var messageField: UITextField!
-//    @IBOutlet weak var outputView: UITextView!
     @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var messageView: UITextView!
+    @IBOutlet weak var textViewHeightConstraint: NSLayoutConstraint!
 
     var messages: [Message] = []
     
@@ -30,18 +31,18 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //初期メッセージ
         messages.append(Message(role: Message.Role.assistant, content: "こんにちは！メッセージをどうぞ！"))
         tableView.reloadData()
-    
+        messageView.applyInputStyle() //入力欄のUI
     }
 
     @IBAction func sendTapped(_ sender: UIButton) {
-            guard let text = messageField.text, !text.isEmpty else { return }
+            guard let text = messageView.text, !text.isEmpty else { return }
 
             // ユーザーメッセージを追加
         messages.append(Message(role: Message.Role.user, content: text))
             tableView.reloadData()
             scrollToBottom() //自動スクロール
 
-            messageField.text = ""
+            messageView.text = ""
             sendButton.isEnabled = false
 
         messages.append(Message(role: Message.Role.assistant, content: ""))
@@ -122,4 +123,24 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.selectionStyle = .none
     }
     
+
+    func textViewDidChange(_ textView: UITextView) {
+        let fixedWidth = textView.frame.width
+        let newSize = textView.sizeThatFits(CGSize(width: fixedWidth, height: .greatestFiniteMagnitude))
+        textViewHeightConstraint.constant = newSize.height
+        view.layoutIfNeeded()
+    }
+
+    
+}
+//テキスト入力欄
+extension UITextView {
+    func applyInputStyle() {
+//        self.isScrollEnabled = false
+//        self.textContainerInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+//        self.font = UIFont.systemFont(ofSize: 16)
+        self.layer.cornerRadius = 8
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.systemGray5.cgColor
+    }
 }
