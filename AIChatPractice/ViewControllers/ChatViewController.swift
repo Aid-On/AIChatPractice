@@ -44,7 +44,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
 //            messages.append(Message(role: .user, content: text))
         messages.append(Message(role: Message.Role.user, content: text))
             tableView.reloadData()
-//            scrollToBottom()
+            scrollToBottom()
 
             messageField.text = ""
             sendButton.isEnabled = false
@@ -64,7 +64,7 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
                     self?.messages[self!.messages.count - 1].content += chunk
                     self?.tableView.reloadData()
                     self?.view.setNeedsLayout()
-//                    self?.scrollToBottom()
+                    self?.scrollToBottom()
                 },
                 onComplete: { [weak self] in
                     self?.sendButton.isEnabled = true
@@ -78,12 +78,12 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
             )
         }
     
-//    func scrollToBottom() {
-//        guard messages.count > 0 else { return }
-//        
-//        let indexPath = IndexPath(row: messages.count - 1, section: 0)
-//        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
-//    }
+    func scrollToBottom() {
+        guard messages.count > 0 else { return }
+        
+        let indexPath = IndexPath(row: messages.count - 1, section: 0)
+        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
