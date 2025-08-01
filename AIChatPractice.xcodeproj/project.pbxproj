@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8316BD5E2E3B7E770020900D /* UserChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8316BD592E3B7E770020900D /* UserChatTableViewCell.swift */; };
+		8316BD5F2E3B7E770020900D /* UserChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8316BD5A2E3B7E770020900D /* UserChatTableViewCell.xib */; };
+		8316BD622E3B7F080020900D /* AssistantChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8316BD602E3B7F080020900D /* AssistantChatTableViewCell.xib */; };
+		8316BD632E3B7F080020900D /* AssistantChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8316BD612E3B7F080020900D /* AssistantChatTableViewCell.swift */; };
 		83DDF84E2E2F8A6F0065B79E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDF84D2E2F8A6F0065B79E /* AppDelegate.swift */; };
 		83DDF8502E2F8A6F0065B79E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDF84F2E2F8A6F0065B79E /* SceneDelegate.swift */; };
 		83DDF8522E2F8A6F0065B79E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDF8512E2F8A6F0065B79E /* ViewController.swift */; };
@@ -16,6 +20,9 @@
 		83DDF8652E2F8A710065B79E /* AIChatPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDF8642E2F8A710065B79E /* AIChatPracticeTests.swift */; };
 		83DDF86F2E2F8A710065B79E /* AIChatPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDF86E2E2F8A710065B79E /* AIChatPracticeUITests.swift */; };
 		83DDF8712E2F8A710065B79E /* AIChatPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDF8702E2F8A710065B79E /* AIChatPracticeUITestsLaunchTests.swift */; };
+		83DDF8812E2F8B550065B79E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDF8802E2F8B550065B79E /* APIClient.swift */; };
+		83DDF8832E2F91270065B79E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDF8822E2F91270065B79E /* ChatViewController.swift */; };
+		83DDF8852E2F94D90065B79E /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DDF8842E2F94D90065B79E /* Struct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8316BD592E3B7E770020900D /* UserChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserChatTableViewCell.swift; sourceTree = "<group>"; };
+		8316BD5A2E3B7E770020900D /* UserChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserChatTableViewCell.xib; sourceTree = "<group>"; };
+		8316BD602E3B7F080020900D /* AssistantChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssistantChatTableViewCell.xib; sourceTree = "<group>"; };
+		8316BD612E3B7F080020900D /* AssistantChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssistantChatTableViewCell.swift; sourceTree = "<group>"; };
 		83DDF84A2E2F8A6F0065B79E /* AIChatPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIChatPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83DDF84D2E2F8A6F0065B79E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83DDF84F2E2F8A6F0065B79E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		83DDF86A2E2F8A710065B79E /* AIChatPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIChatPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83DDF86E2E2F8A710065B79E /* AIChatPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatPracticeUITests.swift; sourceTree = "<group>"; };
 		83DDF8702E2F8A710065B79E /* AIChatPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChatPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83DDF8802E2F8B550065B79E /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		83DDF8822E2F91270065B79E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		83DDF8842E2F94D90065B79E /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8316BD5B2E3B7E770020900D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8316BD612E3B7F080020900D /* AssistantChatTableViewCell.swift */,
+				8316BD602E3B7F080020900D /* AssistantChatTableViewCell.xib */,
+				8316BD592E3B7E770020900D /* UserChatTableViewCell.swift */,
+				8316BD5A2E3B7E770020900D /* UserChatTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		83DDF8412E2F8A6F0065B79E = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +124,10 @@
 		83DDF84C2E2F8A6F0065B79E /* AIChatPractice */ = {
 			isa = PBXGroup;
 			children = (
+				83DDF87D2E2F8B1E0065B79E /* Models */,
+				83DDF87E2E2F8B250065B79E /* Services */,
+				83DDF87F2E2F8B310065B79E /* ViewControllers */,
+				8316BD5B2E3B7E770020900D /* Views */,
 				83DDF84D2E2F8A6F0065B79E /* AppDelegate.swift */,
 				83DDF84F2E2F8A6F0065B79E /* SceneDelegate.swift */,
 				83DDF8512E2F8A6F0065B79E /* ViewController.swift */,
@@ -125,6 +154,30 @@
 				83DDF8702E2F8A710065B79E /* AIChatPracticeUITestsLaunchTests.swift */,
 			);
 			path = AIChatPracticeUITests;
+			sourceTree = "<group>";
+		};
+		83DDF87D2E2F8B1E0065B79E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83DDF8842E2F94D90065B79E /* Struct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83DDF87E2E2F8B250065B79E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				83DDF8802E2F8B550065B79E /* APIClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		83DDF87F2E2F8B310065B79E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83DDF8822E2F91270065B79E /* ChatViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +284,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8316BD5F2E3B7E770020900D /* UserChatTableViewCell.xib in Resources */,
 				83DDF8572E2F8A710065B79E /* Assets.xcassets in Resources */,
+				8316BD622E3B7F080020900D /* AssistantChatTableViewCell.xib in Resources */,
 				83DDF85A2E2F8A710065B79E /* Base in Resources */,
 				83DDF8552E2F8A6F0065B79E /* Base in Resources */,
 			);
@@ -258,9 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8316BD5E2E3B7E770020900D /* UserChatTableViewCell.swift in Sources */,
+				8316BD632E3B7F080020900D /* AssistantChatTableViewCell.swift in Sources */,
+				83DDF8852E2F94D90065B79E /* Struct.swift in Sources */,
 				83DDF8522E2F8A6F0065B79E /* ViewController.swift in Sources */,
 				83DDF84E2E2F8A6F0065B79E /* AppDelegate.swift in Sources */,
 				83DDF8502E2F8A6F0065B79E /* SceneDelegate.swift in Sources */,
+				83DDF8832E2F91270065B79E /* ChatViewController.swift in Sources */,
+				83DDF8812E2F8B550065B79E /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
