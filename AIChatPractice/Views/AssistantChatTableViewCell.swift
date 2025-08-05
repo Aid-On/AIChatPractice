@@ -13,6 +13,7 @@ class AssistantChatTableViewCell: UITableViewCell {
 //        return UINib(nibName: "ChatTableViewCell", bundle: nil)
 //    }
     @IBOutlet var roundedView: UIView!
+    @IBOutlet var roundedView3: UIView!
     
     @IBOutlet weak var Textlabel: UILabel!
     override func awakeFromNib() {
@@ -34,6 +35,7 @@ class AssistantChatTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
     
 
     

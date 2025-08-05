@@ -40,6 +40,8 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
             // ユーザーメッセージを追加
         messages.append(Message(role: Message.Role.user, content: text))
             tableView.reloadData()
+//        tableView.beginUpdates()
+//        tableView.endUpdates()
             scrollToBottom() //自動スクロール
 
             messageView.text = ""
@@ -75,12 +77,25 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     
     //自動で会話の最後までスクロールする
-    func scrollToBottom() {
+//    func scrollToBottom() {
+//        guard messages.count > 0 else { return }
+//        
+//        let indexPath = IndexPath(row: messages.count - 1, section: 0)
+//        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+//    }
+    
+    func scrollToBottom(animated: Bool = false) {
         guard messages.count > 0 else { return }
-        
+
         let indexPath = IndexPath(row: messages.count - 1, section: 0)
-        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+
+        DispatchQueue.main.async {
+            if self.tableView.numberOfRows(inSection: 0) > indexPath.row {
+                self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: animated)
+            }
+        }
     }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count

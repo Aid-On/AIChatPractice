@@ -18,6 +18,7 @@ struct Message {
 }
 
 
+
 struct SimpleMessage {
     var content: String
 }
